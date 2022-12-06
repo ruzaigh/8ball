@@ -1,0 +1,19 @@
+  <div class="container" (click)="generateRandomQuestion()">
+    <ion-label>What is it That you Seek?</ion-label>
+    <div class="ball">
+      <div
+        [ngClass]="(clickBall === true) ? 'window-container' : 'eight-container'"
+      >
+        <div class="wrapper">
+          <div class="eight-number" [hidden]="clickBall === true">8</div>
+          <div class="window" [hidden]="clickBall === false"></div>
+
+          <div
+            [ngClass]="(clickBall === true) ? 'answer show-triangle up' : 'answer'"
+          >
+            {{eightBall}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

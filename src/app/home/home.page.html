@@ -1,28 +1,9 @@
-<ion-menu contentId="main-content1">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu Content</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Magic 8 Ball</ion-title>
+  </ion-toolbar>
+</ion-header>
   <ion-content class="ion-padding">
-    <ion-item routerLink="custom-message" lines="none" detail="false">
-      <ion-label>Message</ion-label>
-    </ion-item>
-    <ion-item routerLink="custom-ball" lines="none" detail="false">
-      <ion-label>Ball</ion-label>
-    </ion-item>
+    <app-ball></app-ball>
   </ion-content>
-</ion-menu>
-<div class="ion-page" id="main-content1">
-  <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">
-    Tap the button in the toolbar to open the menu.
-  </ion-content>
-</div>
+
