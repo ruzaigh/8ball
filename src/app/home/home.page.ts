@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {Router} from "@angular/router";
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {BallComponent} from "../components/ball/ball.component";
 
 @Component({
   selector: 'app-home',
@@ -7,7 +7,8 @@ import {Router} from "@angular/router";
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-
+  // @ts-ignore
+  @ViewChild(BallComponent, {static: true}) ball: BallComponent;
   constructor() { }
 
   ngOnInit() {

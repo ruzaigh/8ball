@@ -1,6 +1,12 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Magic 8 Ball</ion-title>
+    <ion-buttons slot="end">
+      <ion-button  (click)="ball.clickBall = false">
+        <ion-icon name="refresh-outline"></ion-icon>
+        Reset
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
   <ion-content class="ion-padding">
